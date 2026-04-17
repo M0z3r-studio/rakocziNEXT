@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(./IMG/háttér\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* FEJLÉC */
+header {
+    background-color: rgba(139, 94, 9, 0.582);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom:  rgb(100, 69, 2) 8px solid ;
+}
+
+/* MENÜ */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HÍREK */
+main {
+    padding: 20px;
+}
+
+.hir {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hir img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* LÁBLÉC */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+#asd{
+    font-family: fantasy;
+    font-size: 5rem;
+}
+
+a:hover{
+    color: rgb(88, 52, 9);
+}
+
+
+
+/* Gombok */
+.gombok {
+    text-align: center;
+    margin: 20px;
+}
+
+.gombok button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: rgb(114, 79, 3);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gombok button:hover {
+    background: rgb(201, 121, 17);
+}
+
+/* Galéria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Képek */
+.galeria img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* nem torzul, levágja szépen */
+    border-radius: 10px;
+}
+
+/* REJTÉS */
+.rejtett {
+    display: none;
+}
+
+.cim{
+    color: rgb(116, 79, 0);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}

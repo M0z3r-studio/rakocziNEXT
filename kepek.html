@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Rákóczi NEXT</title>
+    <link rel="stylesheet" href="kepek.css">
+</head>
+<body>
+
+<header>
+    <div id="asd">Rákóczi NEXT</div>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="#">Hírek</a>
+        <a href="#">Galéria</a>
+        <a href="#">Tablók</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="cim">Galéria</h1>
+
+    <div class="gombok">
+        <button onclick="mutat('2025')">2025</button>
+        <button onclick="mutat('2026')">2026</button>
+    </div>
+
+    <!-- 2025 képek -->
+    <div id="ev-2025" class="galeria rejtett">
+        <img src="./IMG/2025/kassa.jpg">
+        <img src="./IMG/2025/kassa2.jpg">
+    </div>
+
+    <!-- 2024 képek -->
+    <div id="ev-2026" class="galeria rejtett">
+        <img src="./IMG/2026/csuka.jpg">
+        <img src="./IMG/2026/rakóczi.jpg">
+    </div>
+    
+
+</main>
+
+    <script>
+    function mutat(ev) {
+        // minden galéria elrejtése
+        let osszes = document.querySelectorAll('.galeria');
+        osszes.forEach(g => g.style.display = 'none');
+
+        // kiválasztott megjelenítése
+        document.getElementById('ev-' + ev).style.display = 'flex';
+    }
+    </script>
+
+</body>
+</html>
